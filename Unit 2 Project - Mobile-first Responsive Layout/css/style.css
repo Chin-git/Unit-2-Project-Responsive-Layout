@@ -52,10 +52,6 @@ header {
     text-align: center;
 }
 
-.portfolio img {
-    width: 25%
-}
-
 /* ---- Pseudo Classes ---- */
 
 .name:hover,
@@ -70,9 +66,6 @@ header {
 
 /* ---- ID selectors ---- */
 
-#port {
-    
-}
 
 /* ================================= 
   Media Queries
@@ -116,34 +109,15 @@ header {
         padding: 20px;
     }
     
-    .marketing {
-        width: 30%;
-        float: left;
-    }
-    
-    .search-page {
-        width: 30%;
-        float: left;
-    }
-    
-    .travel-app {
-        width: 30%;
-        float: right
-    }
-    
-    .map {
-        width: 30%;
-        float: left;
-    }
-    
-    .photo-gallery {
-        width: 30%;
-        float: left;
-    }
-    
+    .marketing,
+    .search-page,    
+    .travel-app,
+    .map,
+    .photo-gallery,
     .calc {
-        width: 30%;
-        float: right;
+        float: left;
+        width: 50%;
+        min-height: 375px;
     }
     
     .marketing img,
@@ -167,8 +141,13 @@ header {
 
 @media (min-width: 1024px) {
     
-    .container {
-        max-width: 1200px;
+    .marketing,
+    .search-page,    
+    .travel-app,
+    .map,
+    .photo-gallery,
+    .calc {
+        width: 33.333%;
     }
     
 }
