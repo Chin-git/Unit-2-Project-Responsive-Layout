@@ -1,0 +1,125 @@
+
+/* ================================= 
+  Base styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    color: #121212;
+    background-color: #FAFAFA;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================================= 
+  Base styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+    font-size: 2eem;
+    margin: 0;
+}
+
+.name,
+.main-nav a {
+    display: block;
+
+}
+
+.main-nav li {
+    font-weight: bold;
+    padding: 0 15px; 
+    font-size: 1.25em;
+    list-style-type: none;
+}
+
+/* ---- Portfolio ----*/
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio img {
+    width: 25%
+}
+
+
+
+/* ================================= 
+  Base styles
+==================================== */
+
+/* ---- ID selectors ---- */
+
+#port {
+
+}
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+    
+    .container {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1200px;
+    }
+    
+    .main-nav li {
+        float: right;
+    }
+    
+    
+    .name {
+        float: left;
+        padding-left: 15px;
+    }
+    
+    .profile-pic {
+        float: right;
+        margin-right: 5em;
+        padding-left: 10px;
+    }
+    
+    .intro-p {
+        font-size: 1.75em;
+        padding: 0 15px;
+    }
+    
+    .portfolio {
+        background: #fff;
+        margin: 6em auto 0;
+        width: 80%;
+    }
+    
+
+    /* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (min-width: 1024px) {
+    
+    .container {
+        max-width: 1200px;
+    }
+    
+}
