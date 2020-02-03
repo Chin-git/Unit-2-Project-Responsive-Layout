@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+header {
+    text-align: center;
+}
+
 /* ================================= 
   Base styles
 ==================================== */
@@ -25,14 +29,14 @@ a {
 /* ---- Navigation ---- */
 
 .name {
-    font-size: 2eem;
+    font-size: 2em;
     margin: 0;
 }
 
 .name,
 .main-nav a {
     display: block;
-
+    color: black;
 }
 
 .main-nav li {
@@ -52,6 +56,12 @@ a {
     width: 25%
 }
 
+/* ---- Pseudo Classes ---- */
+
+.name:hover,
+.main-nav a:hover {
+    color: aqua;
+}
 
 
 /* ================================= 
@@ -61,17 +71,16 @@ a {
 /* ---- ID selectors ---- */
 
 #port {
-
+    
 }
-
-
-
 
 /* ================================= 
   Media Queries
 ==================================== */
 
 @media (min-width: 768px) {
+    
+    
     
     .container {
         margin: 0 auto;
@@ -103,7 +112,47 @@ a {
     .portfolio {
         background: #fff;
         margin: 6em auto 0;
-        width: 80%;
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .marketing {
+        width: 30%;
+        float: left;
+    }
+    
+    .search-page {
+        width: 30%;
+        float: left;
+    }
+    
+    .travel-app {
+        width: 30%;
+        float: right
+    }
+    
+    .map {
+        width: 30%;
+        float: left;
+    }
+    
+    .photo-gallery {
+        width: 30%;
+        float: left;
+    }
+    
+    .calc {
+        width: 30%;
+        float: right;
+    }
+    
+    .marketing img,
+    .search-page img,
+    .travel-app img,
+    .map img,
+    .photo-gallery img,
+    .calc img {
+        width: 90%;
     }
     
 
