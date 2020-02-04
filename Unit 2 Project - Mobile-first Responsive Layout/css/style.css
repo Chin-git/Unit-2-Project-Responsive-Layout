@@ -14,8 +14,10 @@ body {
     background-color: #FAFAFA;  
 }
 
-a {
+a,
+i {
     text-decoration: none;
+    transition: .5s;
 }
 
 h1 {
@@ -144,19 +146,11 @@ ul {
 /* ================================= 
   Base styles
 ==================================== */
-
-/* ---- ID selectors ---- */
-
-
-/* ================================= 
-  Media Queries
-==================================== */
-
-@media (min-width: 320px) {
-   
+ 
     #home,
     #portfolio,
-    #cont{
+    #cont,
+    #social-media {
         display: none;
     }
     
@@ -234,7 +228,9 @@ ul {
         padding: 20px;
     }
     
-}
+/* ================================= 
+  Media Queries
+==================================== */
 
 @media (min-width: 768px) {
     
@@ -251,7 +247,8 @@ ul {
     
     #home,
     #portfolio,
-    #cont{
+    #cont,
+    #social-media{
         display: contents;
     }
     
@@ -315,9 +312,10 @@ ul {
     }
     
     .intro-p {
-        width: 70%;
-        margin-right: 20px;
+        width: 56%;
         text-align: left;
+        padding-right: 50px;
+        font-size: 1.4em;
     }
     
         
@@ -359,8 +357,9 @@ ul {
     }
     
     .intro-p {
+        width: 60%;
         font-size: 1.75em;
-        padding: 0 15px;
+        padding-right: 50px;
     }
     
     .main-nav {
