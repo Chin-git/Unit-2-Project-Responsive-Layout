@@ -18,8 +18,8 @@ a {
     text-decoration: none;
 }
 
-header {
-    text-align: center;
+h1 {
+    color: #121212;
 }
 
 /* ================================= 
@@ -33,17 +33,40 @@ header {
     margin: 0;
 }
 
-.name,
-.main-nav a {
-    display: block;
-    color: black;
+.name a,
+.foot-name a {
+    color: #121212;
 }
+.name,
+.main-nav  {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.main-nav a,
+.name a {
+    display: block;
+    padding: 10px 15px;
+}
+
+.main-nav a {
+    text-transform: uppercase;
+    color: black;
+    
+}
+
 
 .main-nav li {
     font-weight: bold;
-    padding: 0 15px; 
-    font-size: 1.25em;
     list-style-type: none;
+}
+
+.main-header {
+    padding: .5em 0;
+}
+
+.main-footer {
+    text-align: center;
 }
 
 /* ---- Portfolio ----*/
@@ -52,10 +75,20 @@ header {
     text-align: center;
 }
 
+/* ---- Contact ----*/
+
+.contact {
+    
+}
+
+
+
 /* ---- Pseudo Classes ---- */
 
-.name:hover,
-.main-nav a:hover {
+.name a:hover,
+.main-nav a:hover,
+.contact a:hover,
+.foot-name a:hover{
     color: aqua;
 }
 
@@ -71,36 +104,51 @@ header {
   Media Queries
 ==================================== */
 
+@media (min-width: 320px) {
+    
+}
+
 @media (min-width: 768px) {
     
-    
-    
+ 
     .container {
         margin: 0 auto;
         width: 90%;
-        max-width: 1200px;
+        max-width: 987px;
     }
     
-    .main-nav li {
+    .main-header {
+        width: 100%;
+        top: 0;
+    }
+    .name {
+        margin-left: 15px;
+    }
+    
+    .foot-nav {
         float: right;
     }
     
+    .foot-nav li {
+        display: inline-block;
+        margin-left: 15px;
+    }
     
-    .name {
+    .main-nav li {
+        display: inline-block;
+    }
+    
+    .foot-name {
         float: left;
-        padding-left: 15px;
     }
     
     .profile-pic {
         float: right;
-        margin-right: 5em;
+        margin-right: 3em;
         padding-left: 10px;
     }
     
-    .intro-p {
-        font-size: 1.75em;
-        padding: 0 15px;
-    }
+    
     
     .portfolio {
         background: #fff;
@@ -118,6 +166,7 @@ header {
         float: left;
         width: 50%;
         min-height: 375px;
+        padding-left: 5px;
     }
     
     .marketing img,
@@ -129,6 +178,35 @@ header {
         width: 90%;
     }
     
+    .main-footer {
+        border-top: 1px solid #EDEDED;
+        padding-top: 1px;
+        font-size: .75em;
+    }
+    
+    .intro-p {
+        font-size: 1.25em;
+        width: 70%;
+        margin-right: 20px;
+    }
+    
+        
+    .contact {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        padding: 30px 0;
+    }
+    
+    .contact span {
+        display: block;
+        font-size: 1.25em;
+        margin-top: 10px;
+    }
+    
+    .contact p {
+        font-size: 1.25em
+    }
 
     /* ---- Float clearfix ---- */
 
@@ -141,6 +219,11 @@ header {
 
 @media (min-width: 1024px) {
     
+    
+    .container {
+        max-width: 1200px;
+    }
+
     .marketing,
     .search-page,    
     .travel-app,
@@ -148,6 +231,25 @@ header {
     .photo-gallery,
     .calc {
         width: 33.333%;
+        padding: 0 0 0 10px;;
     }
     
+    .intro-p {
+        font-size: 1.75em;
+        padding: 0 15px;
+    }
+    
+    .main-nav {
+        float: right;
+    }
+    
+    .main-nav li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+    
+    .name {
+        float: left;
+    }
+     
 }
