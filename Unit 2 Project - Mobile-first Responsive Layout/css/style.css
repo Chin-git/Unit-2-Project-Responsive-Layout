@@ -130,7 +130,6 @@ ul {
 .social a {
     font-size: 1.5em;
     color: black;
-    text-align: 
 }
 
 /* ---- Pseudo Classes ---- */
@@ -271,7 +270,6 @@ ul {
     
     .foot-name {
         float: left;
-        font-size: 
     }
     
     .profile-pic {
@@ -378,5 +376,9 @@ ul {
     .profile-pic {
         margin-right: 48px;
 
+    }
+    
+    .main-footer {
+        font-size: .85em;
     }
 }
