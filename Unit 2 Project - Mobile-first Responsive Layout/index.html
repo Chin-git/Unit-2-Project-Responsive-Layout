@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Responsive Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> <!-- credit: https://www.bootstrapcdn.com/fontawesome/-->
+    <title>Responsive Layout</title>
 </head>
 
 <body>
@@ -71,21 +72,33 @@
             <span>Phone: <strong>+1(111)555-1234</strong></span>
             <span>Email: <strong><a href="mailto:codingwithchin@gmail.com">codingwithchin@gmail.com</a></strong></span>
         </div>
+        
+        <div class="social contact clearfix">
+            <h3>Socials</h3>
+            <ul>
+                <li><a href="https://twitter.com/fullstackofchin" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> 
+                <li><a href="https://www.linkedin.com/in/chinedu-okonkwo-b16a8992/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/Chin-git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/chi.ne.du/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.twitch.tv/chintv" target="_blank"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+                <!-- all social icons from https://fontawesome.com/v4.7.0/icons/ -->
+            </ul>
+        </div>
     </div>
             
     <div class="container clearfix">
 
-        <footer class="main-header main-footer">
+        <footer class="main-footer">
             <h1 class="foot-name"><a href="index.html">Chinedu</a></h1>
             <nav class="main-nav foot-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#port">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="foot-nav">
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a href="#port" id="portfolio">Portfolio</a></li>
+                    <li><a href="#contact" id="cont">Contact</a></li>
+                    <li><a href="#" id="top">Back to top</a></li>
                 </ul>
             </nav>
         </footer>
     </div>
-    
-   
+</body> 
 </html>

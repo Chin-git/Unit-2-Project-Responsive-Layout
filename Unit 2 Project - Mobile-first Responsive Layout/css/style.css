@@ -11,7 +11,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     line-height: 1.6;
     color: #121212;
-    background-color: #FAFAFA;
+    background-color: #FAFAFA;  
 }
 
 a {
@@ -21,6 +21,17 @@ a {
 h1 {
     color: #121212;
 }
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: inherit
+
+}
+
+
 
 /* ================================= 
   Base styles
@@ -65,6 +76,7 @@ h1 {
 
 .main-header {
     padding: .5em 0;
+    width: 100%;
 }
 
 .main-footer {
@@ -75,21 +87,55 @@ h1 {
 
 .portfolio {
     text-align: center;
+    background: linear-gradient(to bottom, aqua, #FAFAFA 95%);
+    border-radius: 10px;
 }
 
+.profile-pic {
+    border-radius: 10px;
+}
 /* ---- Contact ----*/
 
-.contact {
-    
+
+
+/* ---- Socials ----*/
+
+.fa-twitter:hover {
+  color: #2DAAE1;
 }
 
+.fa-instagram:hover {
+  color: orange;
+}
 
+.fa-github:hover {
+  color: gray; 
+}
+
+.fa-linkedin:hover {
+  color: #0077B7;
+}
+
+.fa-twitch:hover {
+    color: #9246FF;
+}
+
+.social ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.social a {
+    font-size: 1.5em;
+    color: black;
+    text-align: 
+}
 
 /* ---- Pseudo Classes ---- */
 
 .name a:hover,
 .main-nav a:hover,
-.contact a:hover,
+.contact span a:hover,
 .foot-name a:hover{
     color: aqua;
 }
@@ -107,6 +153,86 @@ h1 {
 ==================================== */
 
 @media (min-width: 320px) {
+   
+    #home,
+    #portfolio,
+    #cont{
+        display: none;
+    }
+    
+    .foot-name {
+        float: left;
+
+    }
+    
+    #top {
+        font-size: 1.2em;
+    }
+    
+    .main-footer {
+        border-top: 2px solid #EDEDED;
+        padding-top: 1px;
+        font-size: 0.6em;
+    }
+    
+    .main-nav li {
+        background-color: #fff;
+        margin-bottom: 5px;
+        border-radius: 10px;
+    }
+    
+    #top {
+        display: block;
+        float: right;
+    }
+    
+    .profile-pic {
+        width: 100%
+    }
+    
+    .intro-p{
+        text-align: center;
+        font-size: 1.25em;
+    }
+    
+    .marketing img,
+    .search-page img,
+    .travel-app img,
+    .map img,
+    .photo-gallery img,
+    .calc img {
+        width: 90%;
+    }
+    
+    .contact {
+        text-align: center;
+        width: 100%;
+        margin: 6em 0
+    }
+    
+    .contact span {
+        display: block;
+        font-size: 1.25em;
+        margin-top: 10px;
+    }
+    
+    .contact p {
+        font-size: 1.25em
+    }
+    
+    .marketing p,
+    .search-page p,    
+    .travel-app p,
+    .map p,
+    .photo-gallery p,
+    .calc p {
+        font-size: 1.25em;
+        padding: 0 10px
+    }
+    
+    .portfolio {
+        padding: 20px;
+    }
     
 }
 
@@ -117,15 +243,20 @@ h1 {
         margin: 0 auto;
         width: 90%;
         max-width: 1200px;
-
     }
     
-    .main-header {
-        width: 100%;
-        top: 0;
+    .main-nav li {
+        background-color: transparent;
     }
-    .name {
-        margin-left: 15px;
+    
+    #home,
+    #portfolio,
+    #cont{
+        display: contents;
+    }
+    
+    #top {
+        display: none;
     }
     
     .foot-nav {
@@ -143,21 +274,28 @@ h1 {
     
     .foot-name {
         float: left;
+        font-size: 
     }
     
     .profile-pic {
         float: right;
-        margin-right: 3em;
-        padding-left: 10px;
+        width: 377px;
     }
     
-    
-    
     .portfolio {
-        background: #fff;
-        margin: 6em auto 0;
+        margin: 9em auto 0;
         width: 90%;
         padding: 20px;
+    }
+    
+    .marketing p,
+    .search-page p,    
+    .travel-app p,
+    .map p,
+    .photo-gallery p,
+    .calc p {
+        font-size: 1.1em;
+        padding: 0 10px;
     }
     
     .marketing,
@@ -172,33 +310,21 @@ h1 {
         padding-left: 5px;
     }
     
-    .marketing img,
-    .search-page img,
-    .travel-app img,
-    .map img,
-    .photo-gallery img,
-    .calc img {
-        width: 90%;
-    }
-    
     .main-footer {
-        border-top: 1px solid #EDEDED;
-        padding-top: 1px;
-        font-size: .75em;
+        font-size: .8em;
     }
     
     .intro-p {
-        font-size: 1.25em;
         width: 70%;
         margin-right: 20px;
+        text-align: left;
     }
     
         
     .contact {
         text-align: center;
-        width: 50%;
-        margin: auto;
-        padding: 30px 0;
+        width: 60%;
+        margin: 50px auto;
     }
     
     .contact span {
@@ -221,10 +347,6 @@ h1 {
 }
 
 @media (min-width: 1024px) {
-    
-    
-    .container {
-    }
 
     .marketing,
     .search-page,    
@@ -254,4 +376,8 @@ h1 {
         float: left;
     }
      
+    .profile-pic {
+        margin-right: 48px;
+
+    }
 }
