@@ -163,6 +163,10 @@ ul {
     #social-media {
         display: none;
     }
+
+    .container {
+        max-width: 1024px;
+    }
     
     .foot-name {
         float: left;
@@ -263,7 +267,6 @@ ul {
     .container {
         margin: 0 auto;
         width: 90%;
-        max-width: 1200px;
     }
     
     .main-nav li {
