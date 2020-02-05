@@ -183,6 +183,11 @@ ul {
         background-color: #fff;
         margin-bottom: 5px;
         border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    .main-nav li:hover {
+        transform: scale(1.1);
     }
     
     #top {
@@ -215,7 +220,7 @@ ul {
     .map img:hover,
     .photo-gallery img:hover,
     .calc img:hover {
-        transform: scale(1.1)
+        transform: scale(1.1);
     }
     
     .contact {
