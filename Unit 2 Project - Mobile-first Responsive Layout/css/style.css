@@ -51,12 +51,20 @@ ul {
 .name {
     font-size: 2em;
     margin: 0;
+    line-height: 35.5px;
+    height: 35.5px;
 }
 
 .name a,
 .foot-name a {
     color: peru;
 }
+
+.foot-name {
+    line-height: 17px;
+    height: 17px;
+}
+
 .name,
 .main-nav  {
     margin-top: 5px;
@@ -67,8 +75,6 @@ ul {
 .name {
     display: block;
     padding: 10px 15px;
-    text-align: center;
-
 }
 
 .main-nav a {
@@ -257,7 +263,8 @@ ul {
         font-size: 1.25em;
         padding: 0 10px
     }
-    
+
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -396,6 +403,10 @@ ul {
     .main-nav li {
         display: inline-block;
         margin-left: 15px;
+    }
+    
+    .main-nav ul {
+        padding: 10px 15px
     }
     
     .name {
