@@ -104,11 +104,30 @@ ul {
     
 }
 
+.portfolio {
+    padding: 20px;
+}
+
 .profile-pic {
     border-radius: 10px;
 }
 /* ---- Contact ----*/
-
+    .contact {
+        text-align: center;
+        width: 100%;
+        margin: 6em 0
+    }
+    
+    .contact span {
+        display: block;
+        font-size: 1.25em;
+        margin-top: 10px;
+    }
+    
+    .contact p {
+        font-size: 1.25em
+    }
+    
 
 
 /* ---- Socials ----*/
@@ -166,6 +185,7 @@ ul {
 
     .container {
         max-width: 1024px;
+        margin: 0 auto;
     }
     
     .foot-name {
@@ -227,21 +247,6 @@ ul {
         transform: scale(1.1);
     }
     
-    .contact {
-        text-align: center;
-        width: 100%;
-        margin: 6em 0
-    }
-    
-    .contact span {
-        display: block;
-        font-size: 1.25em;
-        margin-top: 10px;
-    }
-    
-    .contact p {
-        font-size: 1.25em
-    }
     
     .marketing p,
     .search-page p,    
@@ -253,10 +258,6 @@ ul {
         padding: 0 10px
     }
     
-    .portfolio {
-        padding: 20px;
-    }
-    
 /* ================================= 
   Media Queries
 ==================================== */
@@ -265,7 +266,6 @@ ul {
     
  
     .container {
-        margin: 0 auto;
         width: 90%;
     }
     
