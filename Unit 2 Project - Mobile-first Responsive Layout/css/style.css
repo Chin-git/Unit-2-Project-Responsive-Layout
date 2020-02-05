@@ -51,18 +51,11 @@ ul {
 .name {
     font-size: 2em;
     margin: 0;
-    line-height: 35.5px;
-    height: 35.5px;
 }
 
 .name a,
 .foot-name a {
     color: peru;
-}
-
-.foot-name {
-    line-height: 17px;
-    height: 17px;
 }
 
 .name,
@@ -306,6 +299,8 @@ ul {
     
     .foot-name {
         float: left;
+        line-height: 17px;
+        height: 17px;
     }
     
     .profile-pic {
@@ -403,10 +398,6 @@ ul {
     .main-nav li {
         display: inline-block;
         margin-left: 15px;
-    }
-    
-    .main-nav ul {
-        padding: 10px 15px
     }
     
     .name {
