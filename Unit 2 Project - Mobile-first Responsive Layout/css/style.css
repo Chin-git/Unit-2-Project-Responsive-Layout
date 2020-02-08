@@ -58,8 +58,8 @@ ul {
     color: peru;
 }
 
-.name,
-.main-nav  {
+
+.main-header {
     margin-top: 5px;
     text-align: center;
 }
@@ -73,7 +73,6 @@ ul {
 .main-nav a {
     text-transform: uppercase;
     color: black;
-    
 }
 
 
@@ -87,9 +86,21 @@ ul {
     width: 100%;
 }
 
-.main-footer {
-    text-align: center;
+.foot-name {
+    margin: 0;
 }
+
+#top {
+    padding: 0;
+}
+
+.foot-name {
+        margin-right: auto;
+    }
+.flex-foot {
+        display: flex;
+        justify-content: space-around;
+    }
 
 /* ---- Portfolio ----*/
 
@@ -187,11 +198,6 @@ ul {
         margin: 0 auto;
     }
     
-    .foot-name {
-        float: left;
-
-    }
-    
     #top {
         font-size: 1.2em;
     }
@@ -284,12 +290,7 @@ ul {
         display: none;
     }
     
-    .foot-nav {
-        float: right;
-    }
-    
     .foot-nav li {
-        display: inline-block;
         margin-left: 15px;
     }
     
@@ -297,11 +298,7 @@ ul {
         display: inline-block;
     }
     
-    .foot-name {
-        float: left;
-        line-height: 17px;
-        height: 17px;
-    }
+    
     
     .profile-pic {
         float: right;
@@ -313,6 +310,8 @@ ul {
         width: 90%;
         padding: 20px;
     }
+    
+    
     
     .marketing p,
     .search-page p,    
@@ -375,14 +374,14 @@ ul {
 
 @media (min-width: 1024px) {
 
-    .marketing,
-    .search-page,    
-    .travel-app,
-    .map,
-    .photo-gallery,
-    .calc {
+.portfolio div:nth-of-type(n+1) {
         width: 33.333%;
-        padding: 0 0 0 10px;;
+        padding: 0 0 0 10px;
+    }
+    
+    .flex {
+        display: flex;
+        justify-content: space-around;
     }
     
     .intro-p {
@@ -391,17 +390,8 @@ ul {
         padding-right: 50px;
     }
     
-    .main-nav {
-        float: right;
-    }
-    
-    .main-nav li {
-        display: inline-block;
-        margin-left: 15px;
-    }
-    
     .name {
-        float: left;
+        margin-right: auto;
     }
      
     .profile-pic {
@@ -412,4 +402,5 @@ ul {
     .main-footer {
         font-size: .85em;
     }
+    
 }
