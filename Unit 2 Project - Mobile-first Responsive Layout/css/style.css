@@ -99,7 +99,7 @@ ul {
     }
 .flex-foot {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
 /* ---- Portfolio ----*/
@@ -292,11 +292,6 @@ ul {
         display: inline-block;
     }
     
-    .main-header {
-        flex-direction: column;
-        align-items: center;
-    }
-    
     .main-nav li {
         display: inline-block;
     }
@@ -382,7 +377,7 @@ ul {
     
     .flex {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     
     .intro-p {
