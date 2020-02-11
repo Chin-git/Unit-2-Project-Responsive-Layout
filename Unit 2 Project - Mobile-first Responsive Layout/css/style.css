@@ -32,6 +32,8 @@ ul {
 
 }
 
+
+
 .main-header,
 #social,
 .main-footer,
@@ -66,8 +68,10 @@ ul {
 
 .main-nav a,
 .name {
-    display: block;
+    display: flex;
     padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-nav a {
@@ -92,14 +96,17 @@ ul {
 
 #top {
     padding: 0;
+    background-color: transparent;
 }
 
 .foot-name {
         margin-right: auto;
     }
 .flex-foot {
-        display: flex;
-        justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
     }
 
 /* ---- Portfolio ----*/
@@ -216,11 +223,6 @@ ul {
         transform: scale(1.1);
     }
     
-    #top {
-        display: block;
-        float: right;
-    }
-    
     .profile-pic {
         width: 100%
     }
@@ -289,16 +291,25 @@ ul {
     
     .foot-nav li {
         margin-left: 15px;
-        display: inline-block;
+        display: flex;
     }
     
     .main-nav li {
         display: inline-block;
     }
     
-    .profile-pic {
-        float: right;
-        width: 377px;
+    .intro {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+
+    .intro-p {
+        order: -1;
+        text-align: left;
+        font-size: 1.25em;
+        padding-right: 50px;
     }
     
     .portfolio {
@@ -319,30 +330,32 @@ ul {
         padding: 0 10px;
     }
     
+    .portfolio  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
     .marketing,
     .search-page,    
     .travel-app,
     .map,
     .photo-gallery,
     .calc {
-        float: left;
-        width: 50%;
+        flex: 1 50%;
         min-height: 375px;
         padding-left: 5px;
+    }
+    
+    #port {
+        flex-basis: 100%;
     }
     
     .main-footer {
         font-size: .8em;
     }
-    
-    .intro-p {
-        width: 56%;
-        text-align: left;
-        padding-right: 50px;
-        font-size: 1.4em;
-    }
-    
-        
+       
     .contact {
         text-align: center;
         width: 60%;
@@ -371,8 +384,12 @@ ul {
 @media (min-width: 1024px) {
 
 .portfolio div:nth-of-type(n+1) {
-        width: 33.333%;
-        padding: 0 0 0 10px;
+    padding: 0 0 0 10px;
+    flex: 1 33.3%;
+    }
+    
+    #port {
+        flex: 1 921.59px;
     }
     
     .flex {
@@ -380,10 +397,9 @@ ul {
         justify-content: space-between;
     }
     
+    
     .intro-p {
-        width: 60%;
-        font-size: 1.75em;
-        padding-right: 50px;
+        font-size: 1.5em;
     }
     
     .name {
